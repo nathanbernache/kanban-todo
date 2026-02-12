@@ -1,0 +1,80 @@
+.card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  cursor: grab;
+  transition: box-shadow 0.15s, opacity 0.15s;
+}
+
+.card:hover {
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.card:active {
+  cursor: grabbing;
+}
+
+.card--dragging {
+  opacity: 0.4;
+}
+
+.card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.card__title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  word-break: break-word;
+}
+
+.card__actions {
+  display: flex;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.card__btn {
+  background: none;
+  border: none;
+  font-size: 0.9rem;
+  padding: 2px 4px;
+  border-radius: 4px;
+  opacity: 0.5;
+  transition: opacity 0.15s;
+}
+
+.card__btn:hover {
+  opacity: 1;
+}
+
+.card__btn--delete:hover {
+  color: #d32f2f;
+}
+
+.card__description {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 6px;
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+.card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 8px;
+}
+
+.card__tag {
+  background: #e8eaf6;
+  color: #3949ab;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+}

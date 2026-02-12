@@ -1,0 +1,83 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.modal {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  width: 90%;
+  max-width: 480px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.modal__title {
+  font-size: 1.25rem;
+  margin-bottom: 16px;
+}
+
+.modal__label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.modal__input,
+.modal__textarea {
+  display: block;
+  width: 100%;
+  margin-top: 4px;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  outline: none;
+  resize: vertical;
+}
+
+.modal__input:focus,
+.modal__textarea:focus {
+  border-color: #5c6bc0;
+}
+
+.modal__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.modal__btn {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.modal__btn--cancel {
+  background: #e0e0e0;
+  color: #333;
+}
+
+.modal__btn--cancel:hover {
+  background: #d0d0d0;
+}
+
+.modal__btn--save {
+  background: #5c6bc0;
+  color: #fff;
+}
+
+.modal__btn--save:hover {
+  background: #3f51b5;
+}
